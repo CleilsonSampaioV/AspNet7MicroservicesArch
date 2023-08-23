@@ -31,11 +31,8 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
   •	Rabbit Management Dashboard -> http://host.docker.internal:15672 -- guest/guest
   •	Portainer -> http://host.docker.internal:9000 -- admin/admin1234
   •	pgAdmin PostgreSQL -> http://host.docker.internal:5050 -- admin@aspnetrun.com/admin1234
-  •	Elasticsearch -> http://host.docker.internal:9200 -- To Be Develop
-  •	Kibana -> http://host.docker.internal:5601 -- To Be Develop
-  •	Web Status -> http://host.docker.internal:8007 -- To Be Develop
   •	Web UI -> http://host.docker.internal:8006
-5.	Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
-6.	Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to call microservices over API Gateway. When you checkout the basket you can follow queue record on RabbitMQ dashboard.
+6.	Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
+7.	Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to call microservices over API Gateway. When you checkout the basket you can follow queue record on RabbitMQ dashboard.
  
 Note: If you are running this application in macOS then use docker.for.mac.localhost as DNS name in .env file and the above URLs instead of host.docker.internal.
